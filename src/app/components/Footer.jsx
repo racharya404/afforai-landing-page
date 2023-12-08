@@ -28,7 +28,7 @@ const Footer = () => {
                     <div className="text-base font-[16px] text-gray-700">Company</div>
                     {footerCompanyLinks.map((i, index) => (
                         <a key={index} href={i.url} target="_blank">
-                            <div className="text-gray-700 text-[13px] cursor-pointer">{i.title}</div>
+                            <div className="text-gray-700 text-[11px] cursor-pointer">{i.title}</div>
                         </a>
                     ))}
                 </div>
@@ -36,7 +36,7 @@ const Footer = () => {
                     <div className="text-base font-[16px] text-gray-700">Resources</div>
                     {footerResourcesLinks.map((i, index) => (
                         <a key={index} href={i.url} target="_blank">
-                            <div className="text-gray-700 text-[13px] cursor-pointer">{i.title}</div>
+                            <div className="text-gray-700 text-[11px] cursor-pointer">{i.title}</div>
                         </a>
                     ))}
                 </div>
@@ -44,7 +44,7 @@ const Footer = () => {
                     <div className="text-base font-[16px] text-gray-700">Follow Us</div>
                     {footerFollowLinks.map((i, index) => (
                         <a key={index} href={i.url} target="_blank">
-                            <div className="text-gray-700 text-[13px] cursor-pointer">{i.title}</div>
+                            <div className="text-gray-700 text-[11px] cursor-pointer">{i.title}</div>
                         </a>
                     ))}
                 </div>
@@ -52,7 +52,7 @@ const Footer = () => {
                     <div className="text-base font-[16px] text-gray-700">Language</div>
                     {footerLanguageLinks.map((i, index) => (
                         <a key={index} href={i.url} target="_blank">
-                            <div className="text-gray-700 text-[13px] cursor-pointer">{i.title}</div>
+                            <div className="text-gray-700 text-[11px] cursor-pointer">{i.title}</div>
                         </a>
                     ))}
                 </div>

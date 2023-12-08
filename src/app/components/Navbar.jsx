@@ -22,7 +22,7 @@ const Navbar = () => {
 
     // Determine whether to apply background and blur based on scroll position
     const navbarBgClass = scrollY > 0 ? 'bg-transparent' : 'bg-transparent';
-    const navbarBlurClass = scrollY > 0 ? 'backdrop-blur-md fixed top-0 left-0 right-0' : '';
+    const navbarBlurClass = scrollY > 0 ? 'backdrop-blur-3xl fixed top-0 left-0 right-0' : '';
 
     return (
         <>
@@ -58,7 +58,7 @@ const Navbar = () => {
                                     Log in
                                 </button>
                                 <button
-                                    className="violet-fill ml-2 p-1.5 px-2 btn btn-primary text-white font-semibold text-sm bg-gradient-to-r from-purple-700 via-purple-600 to-black rounded-over:bg-gradient-to-l hover:from-purple-700 hover:via-purple-600 hover:to-black rounded-2xl h-auto"
+                                    className="violet-fill ml-2 p-1.5 px-2 btn btn-primary text-white font-semibold text-sm bg-gradient-to-r from-purple-700 via-purple-600 to-black rounded-2xl hover:bg-gradient-to-l hover:from-purple-700 hover:via-purple-600 hover:to-black h-auto"
                                 >
                                     Try for free
                                 </button>

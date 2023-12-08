@@ -1,4 +1,12 @@
 import React from 'react';
+import FeaturesSection from "./1stSection/FeaturesSection";
+import ProductivityRepresentation from './2ndSection/ProductivityRepresentation';
+import WhyChooseUs from './3rdSection/WhyChooseUs';
+import MostVersatile from './4thSection/MostVersatile';
+import MultipleLanguageSupported from './6thSection/MultipleLanguageSupported';
+import MoreOutOfFiles from './7thSection/MoreOutOfFiles';
+import DifferentModesAvailable from './5thSection/DifferentModesAvailable';
+
 
 // Component displaying the main page content
 const MainPage = () => {
@@ -10,8 +18,19 @@ const MainPage = () => {
         { title: "Ask in Any Language" }
     ];
 
+    const userProfiles = [
+        //Can be integrated from user database
+        { profile_photo: `https://png.pngtree.com/thumb_back/fh260/background/20230612/pngtree-man-is-wearing-glasses-in-silhouette-on-a-dark-background-image_2886069.jpg` },
+        { profile_photo: `https://png.pngtree.com/thumb_back/fh260/background/20230612/pngtree-man-wearing-glasses-is-wearing-colorful-background-image_2905240.jpg` },
+        { profile_photo: `https://media.istockphoto.com/id/173250761/tr/foto%C4%9Fraf/front-profile-of-a-young-male-on-a-white-background.jpg?s=170667a&w=0&k=20&c=nWICPPY5uYwYu1DWzI1MumWYhBf5VJo8qgf-OV9Kh3c=` },
+        { profile_photo: `https://image.winudf.com/v2/image1/bmV0LndsbHBwci5ib3lzX3Byb2ZpbGVfcGljdHVyZXNfc2NyZWVuXzBfMTY2NzUzNzYxN18wOTk/screen-0.webp?fakeurl=1&type=.webp` },
+
+    ];
+
+    const userCount = 20000;
     return (
         <div className="flex flex-col items-center line-height-[100%] z-2">
+
             {/* AppSumo banner */}
             <div className="inline-flex m-6 items-center p-2 gap-2 border-2 border-gray-700 rounded-[12px] bg-gradient-to-r from-orange-400 to-yellow-500 shadow-backdrop text-gray-700 text-[13px] font-semibold">
                 <img src="https://afforai.com/img/icons/appsumo.png" width="26" height="20" alt="AppSumo Icon" />
@@ -47,6 +66,35 @@ const MainPage = () => {
                     View pricing
                 </button>
             </div>
+
+            {/* Next Image */}
+            <div className="flex z-2 mt-10 items-center box-border">
+                <img
+                    src="https://afforai.com/img/graphics/laptop-landing-1.png"
+                    className="h-[500px] ml-50 mr-50"
+                />
+            </div>
+            <div>
+                <div className="text-center text-gray-500 text-base mt-11">
+                    Loved by <span className="text-purple-600">{userCount}+</span> users around the world
+                </div>
+                <div className='flex justify-center mt-4'>
+                    {userProfiles.map((item, index) => (
+                        <img
+                            src={item.profile_photo}
+                            key={index}
+                            className={`h-[50px] w-[50px] p-0.5 rounded-full border-2 border-sky-400 ${index > 0 ? 'ml-[-5%]' : ''}`}
+                        />
+                    ))}
+                </div>
+            </div>
+            <FeaturesSection />
+            <ProductivityRepresentation />
+            <WhyChooseUs />
+            <MostVersatile />
+            <DifferentModesAvailable />
+            <MultipleLanguageSupported />
+            <MoreOutOfFiles />
         </div>
     );
 };
