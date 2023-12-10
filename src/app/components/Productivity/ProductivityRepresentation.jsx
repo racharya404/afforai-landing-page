@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProductivityRepresentation = () => {
     return (
-        <>q
+        <>
             <div className="flex flex-col items-center container gap-6  mt-[120px]">
                 {/* Call-to-action button */}
                 <div>

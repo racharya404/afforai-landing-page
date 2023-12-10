@@ -7,6 +7,14 @@ module.exports = {
       Roboto: ["Roboto", "sans-serif"],
       Poppins: ['Poppins', "sans-serif"],
     },
+    screens: {
+      xs: "300px",
+      sm: "640px",
+      md: "768px",
+      lg: "1080px",
+      xl: "1280px",
+      ["2xl"]: "1530px",
+    },
     extend: {
       screens: {
         "1000px": "1050px",
